@@ -1,0 +1,26 @@
+Inicio
+
+Función transformar(jsonEntrada):
+    nombreCompleto concatenar jsonEntrada.cliente.nombre + " " + jsonEntrada.cliente.apellido
+    idOrden jsonEntrada.orden.id
+    montoTotal jsonEntrada.orden.monto
+
+    jsonSalida {
+        "orderId": idOrden,
+        "customerName": nombreCompleto,
+        "total": montoTotal
+    }
+
+    Retornar jsonSalida
+
+entrada {
+    cliente: { nombre: "Juan", apellido: "Pérez" },
+    orden: { id: 123, monto: 500 }
+}
+
+resultado transformar(entrada)
+
+Mostrar resultado en consola
+
+Fin
+	
